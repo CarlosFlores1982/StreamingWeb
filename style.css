@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+h2{
+  text-align: center;
+}
+
+.player-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: #334;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.custom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #444;
+}
+
+.custom-controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-controls button:hover {
+  color: #1e90ff;
+}
+
+#video-progress-bar {
+  flex: 1;
+  margin: 0 10px;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #666;
+}
+
+#video-progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #1e90ff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.audio-controls {
+  padding: 10px;
+  background-color: #444;
+  text-align: center;
+}
+
+#toggle-audio-bar {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#toggle-audio-bar:hover {
+  color: #1e90ff;
+}
+
+#audio-bar-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#audio-bar-container.hidden {
+  display: none;
+}
+
+#audio-bar {
+  width: 80%;
+  height: 3px;
+  -webkit-appearance: none;
+  background: #1e90ff;
+}
+
+#audio-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.playlist-wrapper {
+  padding: 10px;
+  background-color: #222;
+}
+
+.playlist-wrapper h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+ul#playlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#playlist li {
+  padding: 10px;
+  background: #333;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul#playlist li:hover {
+  background: #555;
+}
+
+ul#playlist li.active {
+  background: #1e90ff;
+  color: #fff;
+}
+
+#screenshot-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#screenshot-btn:hover {
+  color: #1e90ff;
+}

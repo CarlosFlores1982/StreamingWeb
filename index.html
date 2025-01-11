@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streming en la web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player-container">
+    <div class="video-wrapper">
+      <video id="video-player" autoplay src="videos/video1.mp4"></video>
+      <div class="custom-controls">
+        <button id="play-btn">⏸️</button>
+        <button id="mute-btn">🔇</button>
+        <button id="prev-btn">⏮️</button>
+        <button id="next-btn">⏭️</button>
+        <button id="screenshot-btn">📸</button>
+        <button id="fullscreen-btn">🔳</button>
+        <input type="range" id="video-progress-bar" min="0" max="100" value="0">
+      </div>
+      <div class="audio-controls">
+        <button id="toggle-audio-bar">🎵 Mostrar/Esconder Volumen</button>
+        <div id="audio-bar-container" class="hidden">
+          <input type="range" id="audio-bar" min="0" max="100" value="100">
+        </div>
+      </div>
+    </div>
+    <div class="playlist-wrapper">
+      <h3>Lista de Reproducción</h3>
+      <ul id="playlist">
+        <li data-video="videos/video1.mp4" class="active">Video 1</li>
+        <li data-video="videos/video2.mp4">Video 2</li>
+        <li data-video="videos/video3.mp4">Video 3</li>
+      </ul>
+      <h2>Carlos Omar Flores Mandujano</h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
